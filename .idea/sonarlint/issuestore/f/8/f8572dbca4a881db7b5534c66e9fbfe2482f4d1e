@@ -1,2 +1,6 @@
 
-esquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(²Ú±Ž
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ùïå¨øÿÿÿÿ8ñòºûò-
+esquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(²Ú±Ž
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(áÖßûÿÿÿÿ8Ïß¹ûò-
