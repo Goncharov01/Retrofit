@@ -9,6 +9,7 @@ import android.widget.EditText;
 
 import org.w3c.dom.Text;
 
+import dagger.android.AndroidInjection;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -22,8 +23,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
 
         loginButton = findViewById(R.id.login);

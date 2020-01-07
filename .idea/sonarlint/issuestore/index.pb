@@ -13,3 +13,5 @@ a
 1app/src/main/java/com/example/retrofit/Model.java,5\d\5d66ca764d3775ba73a884b830cd498cee4bc0ab
 j
 :app/src/main/java/com/example/retrofit/RetrofitClient.java,7\1\71dfecfb96844e7d0dcc409bb8d62ab949b8c29b
+m
+=app/src/main/java/com/example/retrofit/HeaderInterceptor.java,a\4\a4e912977e9807fde0e0420ee22faf8eadc99081
