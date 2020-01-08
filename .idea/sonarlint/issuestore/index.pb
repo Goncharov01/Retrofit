@@ -15,3 +15,13 @@ j
 :app/src/main/java/com/example/retrofit/RetrofitClient.java,7\1\71dfecfb96844e7d0dcc409bb8d62ab949b8c29b
 m
 =app/src/main/java/com/example/retrofit/HeaderInterceptor.java,a\4\a4e912977e9807fde0e0420ee22faf8eadc99081
+{
+Kapp/src/main/java/com/example/retrofit/dagger/model/MainActivityModule.java,3\d\3db9353a91a0c730b37d85835f5db5053217076e
+x
+Happ/src/main/java/com/example/retrofit/dagger/component/MyComponent.java,b\7\b747af74e0bfa51f3d418f531cdd0ea3edd0891f
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+_
+/app/src/main/java/com/example/retrofit/App.java,7\5\751968e85df5b774ad97792d094e57f5f569f22c
+y
+Iapp/src/main/java/com/example/retrofit/dagger/model/SharedPrefModule.java,e\4\e45247ae4dbb6c5a4e43b41f6d20711244805ca6

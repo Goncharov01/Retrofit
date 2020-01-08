@@ -9,6 +9,8 @@ import android.widget.EditText;
 
 import org.w3c.dom.Text;
 
+import javax.inject.Inject;
+
 import dagger.android.AndroidInjection;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -20,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
     Button loginButton;
 
 
-
+@Inject
+ApiService apiService;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         AndroidInjection.inject(this);
@@ -42,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 model.setUserName(userName.getText().toString());
 
 
-                RetrofitClient.getApi().login(model).enqueue(new Callback() {
+               apiService.login(model).enqueue(new Callback() {
                     @Override
                     public void onResponse(Call call, Response response) {
                         System.out.println(model);

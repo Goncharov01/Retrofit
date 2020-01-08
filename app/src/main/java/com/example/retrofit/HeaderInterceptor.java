@@ -1,5 +1,7 @@
 package com.example.retrofit;
 
+import android.content.SharedPreferences;
+
 import java.io.IOException;
 
 import okhttp3.Interceptor;
@@ -8,8 +10,17 @@ import okhttp3.Response;
 
 public class HeaderInterceptor implements Interceptor {
 
+    SharedPreferences sharedPreferences;
+
+    public HeaderInterceptor (SharedPreferences sharedPreferences){
+        this.sharedPreferences=sharedPreferences;
+    }
+
+
     @Override
     public Response intercept(Chain chain) throws IOException {
+
+
 
         Request original = chain.request();
         System.out.println(original.url());
