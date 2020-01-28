@@ -29,8 +29,8 @@ public class HeaderInterceptor implements Interceptor {
         if(original.url().equals("https://petshop-server.herokuapp.com/auth")){
             requestBuilder = original.newBuilder();
         }else {
-            requestBuilder = original.newBuilder();
-        //            .header("Token", pm.getAuthToken());
+            requestBuilder = original.newBuilder()
+                    .header("Token", sharedPreferences.getString("token"," "));
         }
         System.out.println("Interceptor");
 

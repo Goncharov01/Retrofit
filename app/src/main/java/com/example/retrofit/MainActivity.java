@@ -2,6 +2,7 @@ package com.example.retrofit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,9 +22,12 @@ public class MainActivity extends AppCompatActivity {
     EditText userName,password;
     Button loginButton;
 
+@Inject
+SharedPreferences sharedPreferences;
 
 @Inject
 ApiService apiService;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         AndroidInjection.inject(this);
@@ -48,6 +52,9 @@ ApiService apiService;
                apiService.login(model).enqueue(new Callback() {
                     @Override
                     public void onResponse(Call call, Response response) {
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putString("token",response.headers().get("token"));
+                        editor.apply();
                         System.out.println(model);
                     }
 
