@@ -2,6 +2,7 @@ package com.example.retrofit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     EditText userName,password;
     Button loginButton;
 
+
 @Inject
 SharedPreferences sharedPreferences;
 
@@ -33,7 +35,6 @@ ApiService apiService;
         AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
 
         loginButton = findViewById(R.id.login);
@@ -49,26 +50,36 @@ ApiService apiService;
                 model.setUserName(userName.getText().toString());
 
 
-               apiService.login(model).enqueue(new Callback() {
-                    @Override
-                    public void onResponse(Call call, Response response) {
-                        SharedPreferences.Editor editor = sharedPreferences.edit();
-                        editor.putString("token",response.headers().get("token"));
-                        editor.apply();
-                        System.out.println(model);
+               apiService.login(model).enqueue(new Callback<TokenAuf>() {
+
+                   @Override
+                    public void onResponse(Call<TokenAuf> call, Response<TokenAuf> response) {
+                       if (response.body() != null) {
+                           SharedPreferences.Editor editor = sharedPreferences.edit();
+                           editor.putString("token",response.body().getToken());
+                           editor.apply();
+                           System.out.println("sharedPreferences " + sharedPreferences.getString("token", " "));
+                           System.out.println(model.getUserName());
+                           ActivivtyBref();
+                       }
+
                     }
 
-                    @Override
-                    public void onFailure(Call call, Throwable t) {
+                   @Override
+                    public void onFailure(Call<TokenAuf> call, Throwable t) {
                         System.out.println("!!!!!!!!");
                     }
                 });
             }
+
         });
-
-
-
     }
 
+    public void ActivivtyBref (){
+
+        Intent intent = new Intent(this,SecondActivity.class);
+        startActivity(intent);
+
+    }
 
 }

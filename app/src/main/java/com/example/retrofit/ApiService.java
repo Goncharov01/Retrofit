@@ -1,5 +1,7 @@
 package com.example.retrofit;
 
+import android.media.session.MediaSession;
+
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
@@ -8,6 +10,6 @@ import retrofit2.http.POST;
 public interface ApiService {
 
     @POST("authorize/login")
-    Call<Object> login (@Body Model model);
+    Call<TokenAuf> login (@Body Model model);
 }
 

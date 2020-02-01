@@ -1,8 +1,10 @@
 
+V
+squid:S106>"9Replace this use of System.out or System.err by a logger.(µ‡³‡8¹×¼ÿ-
 [
-squid:S106:"9Replace this use of System.out or System.err by a logger.(áÖßûÿÿÿÿ8†ÅÕø-
-Isquid:S1659"&Declare "password" on a separate line.(ß„ØÇşÿÿÿÿ8‹©‡Õ÷-
-]squid:UselessImportCheck"-Remove this unused import 'org.w3c.dom.Text'.(¶Äè‹şÿÿÿÿ8‹©‡Õ÷-
-esquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(²Ú±
+squid:S106F"9Replace this use of System.out or System.err by a logger.(Ùïå¨øÿÿÿÿ8†ÅÕø-
+]squid:UselessImportCheck"-Remove this unused import 'org.w3c.dom.Text'.(¶Äè‹şÿÿÿÿ8‹©‡Õ÷-
 [
-squid:S106?"9Replace this use of System.out or System.err by a logger.(Ùïå¨øÿÿÿÿ8†ÅÕø-
+squid:S106="9Replace this use of System.out or System.err by a logger.(„¢ôÏøÿÿÿÿ8¹×¼ÿ-
+Isquid:S1659"&Declare "password" on a separate line.(ß„ØÇşÿÿÿÿ8‹©‡Õ÷-
+esquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(²Ú±

@@ -25,3 +25,7 @@ _
 /app/src/main/java/com/example/retrofit/App.java,7\5\751968e85df5b774ad97792d094e57f5f569f22c
 y
 Iapp/src/main/java/com/example/retrofit/dagger/model/SharedPrefModule.java,e\4\e45247ae4dbb6c5a4e43b41f6d20711244805ca6
+d
+4app/src/main/java/com/example/retrofit/TokenAuf.java,8\c\8c894641cd78229bcb29073724555917c6215390
+j
+:app/src/main/java/com/example/retrofit/SecondActivity.java,2\9\296ee09c51d25864429e9c85c396dffd391db48a

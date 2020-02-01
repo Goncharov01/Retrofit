@@ -16,11 +16,8 @@ public class HeaderInterceptor implements Interceptor {
         this.sharedPreferences=sharedPreferences;
     }
 
-
     @Override
     public Response intercept(Chain chain) throws IOException {
-
-
 
         Request original = chain.request();
         System.out.println(original.url());
@@ -30,7 +27,7 @@ public class HeaderInterceptor implements Interceptor {
             requestBuilder = original.newBuilder();
         }else {
             requestBuilder = original.newBuilder()
-                    .header("Token", sharedPreferences.getString("token"," "));
+                    .header("Autorization","Bearer " + sharedPreferences.getString("token"," "));
         }
         System.out.println("Interceptor");
 
