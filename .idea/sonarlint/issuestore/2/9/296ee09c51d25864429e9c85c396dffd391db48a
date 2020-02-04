@@ -1,0 +1,8 @@
+
+[
+squid:S106-"9Replace this use of System.out or System.err by a logger.(À”ï„üÿÿÿÿ8ò†õç€.
+qsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(Òìùıùÿÿÿÿ8ò†õç€.
+V
+squid:S1066"9Replace this use of System.out or System.err by a logger.(¨óÚĞ8ò†õç€.
+‹"squid:ClassVariableVisibilityCheck"VMake modelMotos a static final constant or non-public and provide accessors if needed.(ú¨ôª8ò†õç€.
+gsquid:HiddenFieldCheck.">Rename "modelMotos" which hides the field declared at line 25.(­‡ø8ò†õç€.

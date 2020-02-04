@@ -23,11 +23,11 @@ public class HeaderInterceptor implements Interceptor {
         System.out.println(original.url());
 
         Request.Builder requestBuilder;
-        if(original.url().equals("https://petshop-server.herokuapp.com/auth")){
+        if(original.url().equals("https://fluxjwt.herokuapp.com/authorize/login")){
             requestBuilder = original.newBuilder();
         }else {
             requestBuilder = original.newBuilder()
-                    .header("Autorization","Bearer " + sharedPreferences.getString("token"," "));
+                    .header("Authorization","Bearer " + sharedPreferences.getString("token"," "));
         }
         System.out.println("Interceptor");
 
