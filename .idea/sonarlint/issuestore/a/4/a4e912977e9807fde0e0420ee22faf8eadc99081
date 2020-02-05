@@ -1,6 +1,6 @@
 
 O
 squid:S106 "9Replace this use of System.out or System.err by a logger.(º µÛ
-ssquid:S2159"VRemove this call to "equals"; comparisons between unrelated types always return false.(–¹¡e8Á£¡è€.
+ysquid:S2159"VRemove this call to "equals"; comparisons between unrelated types always return false.(‡‘Ÿüÿÿÿÿ8ôÏ.
 V
-squid:S106"9Replace this use of System.out or System.err by a logger.(˜ü¼8Á£¡è€.
+squid:S106"9Replace this use of System.out or System.err by a logger.(˜ü¼8ôÏ.
